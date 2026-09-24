@@ -279,7 +279,7 @@ export function PivotCalculatorPage({ addPivot }: PivotCalculatorPageProps) {
           {/* Header Title Section */}
           <div className="flex flex-col gap-1">
             <div className="flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#0292e3]">
-              <span>📈 DIGITAL GOLD ANALYSIS</span>
+              <span>📈 DIGITAL GOLD FORMULA</span>
             </div>
             <h1 className="text-2xl font-extrabold tracking-tight text-slate-900">
               Manual Pivot Result

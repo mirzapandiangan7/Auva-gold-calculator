@@ -54,7 +54,7 @@ export function ChartCard({ series = [], height = 250, minimal = false }: ChartC
               fontSize: 12,
               boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
             }}
-            formatter={(v: number) => [money(v), 'XAUUSD']}
+            formatter={(value) => [money(Number(value ?? 0)), 'XAUUSD']}
           />
           <Area
             type="monotone"

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { scrapeLiveQuotes } from "@/lib/scrape-live-quotes";
+import { scrapeAllInstruments } from "@/lib/scrape-ohlc";
 import { getSupabaseAdmin } from "@/lib/supabase-admin";
 
 export async function GET(req: NextRequest) {
@@ -10,7 +10,7 @@ export async function GET(req: NextRequest) {
 
   try {
     const supabaseAdmin = getSupabaseAdmin();
-    const rows = await scrapeLiveQuotes();
+    const rows = await scrapeAllInstruments();
 
     const { error: upsertError } = await supabaseAdmin
       .from("ohlc_data")

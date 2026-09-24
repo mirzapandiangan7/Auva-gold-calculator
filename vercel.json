@@ -1,8 +1,6 @@
 {
   "crons": [
-    {
-      "path": "/api/cron/scrape-latest",
-      "schedule": "30 21 * * *"
-    }
+    { "path": "/api/cron/scrape-latest", "schedule": "30 21 * * *" },
+    { "path": "/api/cron/scrape-news", "schedule": "0 0 * * *" }
   ]
 }
